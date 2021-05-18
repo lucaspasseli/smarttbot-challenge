@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Operations from "../../components/Operations";
 import { Container } from "./style";
 import AddBot from "../../components/AddBot";
+import CardContainer from "../../components/Cards/CardContainer";
 
 const Dashboard = () => (
   <Container>
@@ -10,6 +11,7 @@ const Dashboard = () => (
     <Header />
     <Operations />
     <AddBot />
+    <CardContainer />
   </Container>
 );
 
