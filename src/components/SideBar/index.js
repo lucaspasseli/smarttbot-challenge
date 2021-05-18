@@ -1,4 +1,4 @@
-import { PaperStyled } from "../Paper/style";
+import Paper from "../Paper";
 
-const SideBar = () => <PaperStyled gridArea="SideBar" />;
+const SideBar = () => <Paper gridArea="SideBar" />;
 export default SideBar;
