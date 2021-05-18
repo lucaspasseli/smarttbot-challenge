@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: blue;
+  height: calc(100vh - 40px);
+  background-color: var(--gray-light);
   padding: 20px;
   display: grid;
-  grid-template-columns: 0.4fr 1.6fr;
-  grid-template-rows: 0.4fr 0.9fr 0.9fr 1.8fr;
-  gap: 0px 0px;
+  grid-template-columns: 4vw auto;
+  grid-template-rows: 4vw 2fr 1fr 3fr;
+  gap: 20px 30px;
   grid-template-areas:
-    "Aside Header"
-    "Aside Operations"
-    "Aside Addbot"
-    "Aside Cards";
+    "SideBar Header"
+    "SideBar Operations"
+    "SideBar AddBot"
+    "SideBar CardContainer";
 `;
