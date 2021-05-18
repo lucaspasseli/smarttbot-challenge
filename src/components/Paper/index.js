@@ -1,5 +1,7 @@
 import { PaperStyled } from "./style";
 
-const Paper = ({ gridArea }) => <PaperStyled gridArea={gridArea} />;
+const Paper = ({ gridArea, children }) => (
+  <PaperStyled gridArea={gridArea}>{children}</PaperStyled>
+);
 
 export default Paper;
