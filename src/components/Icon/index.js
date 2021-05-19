@@ -1,7 +1,7 @@
-import { IconStyled } from "./style";
+import * as S from "./style";
 
 const Icon = ({ icon, alt, separator, isClickable }) => (
-  <IconStyled
+  <S.Icon
     src={icon}
     alt={alt}
     separator={separator}
