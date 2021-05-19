@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SideBarWrap = styled.div`
+export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -2,11 +2,11 @@ import Icon from "../Icon";
 import Paper from "../Paper";
 import LogoSmarttBot from "../../assets/logoSmarttBot.png";
 import BarGraph from "../../assets/barGraph.svg";
-import { SideBarWrap } from "./style";
+import * as S from "./style";
 
 const SideBar = () => (
   <Paper gridArea="SideBar">
-    <SideBarWrap>
+    <S.Sidebar>
       <Icon
         icon={LogoSmarttBot}
         alt="SmarttBot"
@@ -14,7 +14,7 @@ const SideBar = () => (
         isClickable
       />
       <Icon icon={BarGraph} alt="Análise geral" isClickable />
-    </SideBarWrap>
+    </S.Sidebar>
   </Paper>
 );
 export default SideBar;
