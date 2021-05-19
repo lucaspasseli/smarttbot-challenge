@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PaperStyled = styled.div`
+export const Paper = styled.div`
   width: 100%;
   border-radius: 8px;
 
