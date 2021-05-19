@@ -1,7 +1,17 @@
 import styled from "styled-components";
 import LogoSmarttBot from "../../../assets/logoSmarttBot.png";
 
-const Toggle = styled.div`
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
+
+export const Text = styled.span`
+  color: ${({ isBold }) => (isBold ? "var(--black)" : "var(--gray)")};
+  font-weight: ${({ isBold }) => (isBold ? "500" : "400")};
+`;
+export const Toggle = styled.div`
   position: relative;
   display: inline-block;
   width: 4rem;
@@ -12,7 +22,7 @@ const Toggle = styled.div`
   background-size: 130%;
   background-position: -0.9rem -0.5rem;
 `;
-Toggle.Label = styled.label`
+export const Slider = styled.label`
   position: absolute;
   top: 0;
   left: 0;
@@ -34,13 +44,13 @@ Toggle.Label = styled.label`
   }
 `;
 
-Toggle.Slider = styled.input`
+export const Input = styled.input`
   opacity: 0;
   z-index: 1;
   border-radius: 15px;
   width: 42px;
   height: 26px;
-  &:checked + ${Toggle.Label} {
+  &:checked + ${Slider} {
     background-color: rgba(3, 166, 136, 0.6);
     &::after {
       content: "";
@@ -53,16 +63,3 @@ Toggle.Slider = styled.input`
     }
   }
 `;
-
-Toggle.Container = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-`;
-
-Toggle.Text = styled.span`
-  color: ${({ isBold }) => (isBold ? "var(--black)" : "var(--gray)")};
-  font-weight: ${({ isBold }) => (isBold ? "500" : "400")};
-`;
-
-export default Toggle;

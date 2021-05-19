@@ -1,23 +1,23 @@
-import Toggle from "./style";
+import * as S from "./style";
 import { useState } from "react";
 
 const SwitchButton = () => {
   const [isRealMode, setIsRealMode] = useState(true);
 
   return (
-    <Toggle.Container>
-      <Toggle.Text isBold={!isRealMode}>Modo Simulado</Toggle.Text>
-      <Toggle>
-        <Toggle.Slider
+    <S.Container>
+      <S.Text isBold={!isRealMode}>Modo Simulado</S.Text>
+      <S.Toggle>
+        <S.Input
           id="checkbox"
           type="checkbox"
           checked={isRealMode}
           onChange={() => setIsRealMode(!isRealMode)}
         />
-        <Toggle.Label htmlFor="checkbox" />
-      </Toggle>
-      <Toggle.Text isBold={isRealMode}>Modo Real</Toggle.Text>
-    </Toggle.Container>
+        <S.Slider htmlFor="checkbox" />
+      </S.Toggle>
+      <S.Text isBold={isRealMode}>Modo Real</S.Text>
+    </S.Container>
   );
 };
 
