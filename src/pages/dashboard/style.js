@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: calc(100vh - 40px);
+  height: calc(100vh - 48px);
   background-color: var(--gray-light);
   padding: 1.5rem;
   display: grid;
