@@ -1,13 +1,13 @@
 import CardBot from "../CardBot";
-import { CardContainerStyled } from "./style";
+import * as S from "./style";
 
 const CardContainer = () => (
-  <CardContainerStyled>
+  <S.Container>
     <CardBot number="1" />
     <CardBot number="2" />
     <CardBot number="3" />
     <CardBot number="4" />
-  </CardContainerStyled>
+  </S.Container>
 );
 
 export default CardContainer;
