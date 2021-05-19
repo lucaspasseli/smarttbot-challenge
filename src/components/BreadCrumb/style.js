@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-const BreadCrumbStyled = styled.div``;
+export const BreadCrumb = styled.div`
+  flex-grow: 1;
+`;
 
-BreadCrumbStyled.Text = styled.span`
+export const Text = styled.span`
   font-weight: 500;
 
   &::after {
@@ -21,5 +23,3 @@ BreadCrumbStyled.Text = styled.span`
     }
   }
 `;
-
-export default BreadCrumbStyled;

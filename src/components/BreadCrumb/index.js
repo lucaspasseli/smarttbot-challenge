@@ -1,14 +1,14 @@
-import BreadCrumbStyled from "./style";
+import * as S from "./style";
 
 const BreadCrumb = ({ path }) => {
   const breads = path.split("/");
 
   return (
-    <BreadCrumbStyled>
+    <S.BreadCrumb>
       {breads.map((bread, key) => (
-        <BreadCrumbStyled.Text key={key}>{bread}</BreadCrumbStyled.Text>
+        <S.Text key={key}>{bread}</S.Text>
       ))}
-    </BreadCrumbStyled>
+    </S.BreadCrumb>
   );
 };
 
