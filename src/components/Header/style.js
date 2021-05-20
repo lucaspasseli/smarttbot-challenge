@@ -5,6 +5,6 @@ export const Wrap = styled.div`
   align-items: center;
   align-content: center;
   height: 100%;
-  margin: 0 2rem;
+  padding: 0 2rem;
   gap: 2rem;
 `;

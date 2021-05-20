@@ -4,6 +4,6 @@ export const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  padding: 2rem 0;
   gap: 2rem;
 `;
