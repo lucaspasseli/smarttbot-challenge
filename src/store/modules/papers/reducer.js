@@ -2,8 +2,8 @@ import { GET_PAPERS } from "./actions.Types";
 
 const defaultState = {
   allPapers: [],
-  totalOfPapers: 0,
-  resumeOfPapers: 0,
+  totalOfPapers: undefined,
+  resumeOfPapers: undefined,
 };
 
 const papersReducer = (state = defaultState, actions) => {
