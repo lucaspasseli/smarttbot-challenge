@@ -51,7 +51,7 @@ export const Input = styled.input`
   width: 42px;
   height: 26px;
   &:checked + ${Slider} {
-    background-color: rgba(3, 166, 136, 0.6);
+    background-color: rgba(27, 163, 156, 0.6);
     &::after {
       content: "";
       display: block;
