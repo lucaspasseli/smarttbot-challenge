@@ -4,6 +4,7 @@ import Status from "../../Status";
 import Badge from "../../Badges";
 import Number from "../../Number";
 import PaperInfo from "../../PaperInfo";
+import Graphic from "../../Graphic";
 
 const CardBot = ({ number }) => (
   <Paper gridArea={`Card${number}`}>
@@ -32,6 +33,7 @@ const CardBot = ({ number }) => (
           <div>
             <S.Title>Histórico do dia</S.Title>
             <S.Text>Última atualização • 16:00</S.Text>
+            <Graphic />
           </div>
         </S.Row>
       </S.Collumn>
