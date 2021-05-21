@@ -8,7 +8,13 @@ import SwitchButton from "../Buttons/SwitchButton";
 const Header = () => (
   <Paper gridArea="Header">
     <S.Wrap>
-      <Icon icon={BarGraph} alt="Análise geral" separator="Right" isClickable />
+      <Icon
+        icon={BarGraph}
+        alt="Análise geral"
+        width="1rem"
+        separator="Right"
+        isClickable
+      />
 
       <BreadCrumb path="Análise geral/Principal" />
       <SwitchButton />

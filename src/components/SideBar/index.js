@@ -10,10 +10,11 @@ const SideBar = () => (
       <Icon
         icon={LogoSmarttBot}
         alt="SmarttBot"
+        width="2rem"
         separator="Bottom"
         isClickable
       />
-      <Icon icon={BarGraph} alt="Análise geral" isClickable />
+      <Icon icon={BarGraph} alt="Análise geral" width="1rem" isClickable />
     </S.Sidebar>
   </Paper>
 );
