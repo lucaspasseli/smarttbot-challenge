@@ -5,9 +5,10 @@ export const Container = styled.div`
 `;
 
 export const Wrap = styled.div`
-  padding: 2rem;
   display: flex;
   align-items: center;
+  height: 100%;
+  margin: 0 1.5rem;
 `;
 
 export const TextWrap = styled.div`
@@ -17,7 +18,6 @@ export const TextWrap = styled.div`
 
 export const Title = styled.h1`
   font-weight: 500;
-  font-size: 1.1rem;
   margin-bottom: 0.3rem;
 `;
 

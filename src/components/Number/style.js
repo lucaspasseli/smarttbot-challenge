@@ -14,7 +14,7 @@ export const Text = styled.p`
 
 export const NumberText = styled.p`
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   color: ${({ isMoney, numberValue }) =>
     isMoney && numberValue >= 0
       ? "var(--green)"
