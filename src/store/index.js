@@ -1,8 +1,8 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import papersReducer from "./modules/papers/reducer";
+import papersReducer from "./modules/overview/reducer";
 
-const reducers = combineReducers({ papers: papersReducer });
+const reducers = combineReducers({ overview: papersReducer });
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
