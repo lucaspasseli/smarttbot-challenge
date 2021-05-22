@@ -1,8 +1,8 @@
 import * as S from "./style";
 
-const Badge = ({ name }) => (
-  <S.Container>
-    <S.Text>{name}</S.Text>
+const Badge = ({ name, isHighlight }) => (
+  <S.Container isHighlight={isHighlight}>
+    <S.Text isHighlight={isHighlight}>{name}</S.Text>
   </S.Container>
 );
 
