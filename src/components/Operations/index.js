@@ -2,9 +2,9 @@ import Number from "../Number";
 import Paper from "../Paper";
 import * as S from "./style";
 
-const Operations = ({ papers }) => {
-  const { allPapers, totalOfPapers, resumeOfPapers } = papers;
-  console.log(totalOfPapers);
+const Operations = ({ overview }) => {
+  console.log(overview);
+  const { moviment_summary, transactions, papers } = overview;
 
   return (
     <Paper gridArea="Operations">
@@ -14,12 +14,12 @@ const Operations = ({ papers }) => {
           <Number
             description="Resumo de movimentação"
             isMoney
-            numberValue={resumeOfPapers}
+            numberValue={moviment_summary}
           />
           <Number
             description="Total de transações realizada"
             alignX="right"
-            numberValue={totalOfPapers}
+            numberValue={transactions}
           />
         </S.Wrap>
       </S.Container>
