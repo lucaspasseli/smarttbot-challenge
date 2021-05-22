@@ -1,10 +1,11 @@
 import Number from "../Number";
 import Paper from "../Paper";
+import Papers from "../Papers";
 import * as S from "./style";
 
 const Operations = ({ overview }) => {
   console.log(overview);
-  const { moviment_summary, transactions, papers } = overview;
+  const { moviment_summary, transactions, papers = [] } = overview;
 
   return (
     <Paper gridArea="Operations">
@@ -22,6 +23,12 @@ const Operations = ({ overview }) => {
             numberValue={transactions}
           />
         </S.Wrap>
+        <S.Text>Papés negociados</S.Text>
+        <S.PapersWrap>
+          {papers.map(({ name, trasactions }, key) => (
+            <Papers name={name} trasactions={trasactions} />
+          ))}
+        </S.PapersWrap>
       </S.Container>
     </Paper>
   );
