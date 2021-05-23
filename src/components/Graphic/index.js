@@ -1,20 +1,21 @@
 import { Line } from "react-chartjs-2";
 
-const Graphic = () => {
+const Graphic = ({ movimentations }) => {
+  const movimentationsData = movimentations.map(({ date, value }, ind) => ({
+    x: date.substring(10, 16).replace(":", "."),
+    y: value,
+  }));
+
+  console.log(movimentationsData);
+
   return (
     <div>
       <Line
         data={{
           datasets: [
             {
-              data: [
-                { x: 10.8, y: 30 },
-                { x: 11.2, y: 40 },
-                { x: 12.7, y: 30 },
-                { x: 13.1, y: 90 },
-                { x: 14, y: 72 },
-                { x: 15.2, y: 10 },
-              ],
+              data: movimentationsData,
+
               fill: false,
               borderColor: "rgb(75, 192, 192)",
               tension: 0.4,
@@ -58,8 +59,8 @@ const Graphic = () => {
           scales: {
             x: {
               type: "linear",
-              min: 16 - 6,
-              max: 16,
+              min: 0,
+              max: 24,
               ticks: {
                 stepSize: 2,
                 disaply: "none",
