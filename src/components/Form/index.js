@@ -36,7 +36,7 @@ const Form = () => {
   const handleForm = (data) => {
     console.log(data);
 
-    // api.post("/robot", data).then((response) => console.log(response));
+    api.post("/robot", data).then((response) => console.log(response));
     reset();
   };
 
