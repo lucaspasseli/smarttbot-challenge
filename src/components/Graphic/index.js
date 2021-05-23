@@ -68,8 +68,8 @@ const Graphic = ({ movimentations }) => {
             },
           },
         }}
-        height={150}
-        width={500}
+        height={180}
+        width={400}
       />
     </div>
   );

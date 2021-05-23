@@ -1,13 +1,46 @@
+import { getTodayMovimentations } from "../../../utils/getTodayMovimentations";
 import CardBot from "../CardBot";
 import * as S from "./style";
 
-const CardContainer = () => (
-  <S.Container>
-    <CardBot number="1" />
-    <CardBot number="2" />
-    <CardBot number="3" />
-    <CardBot number="4" />
-  </S.Container>
-);
+const CardContainer = ({ robots = [] }) => {
+  console.log(robots, "aaaaaaaaa");
+
+  console.log(getTodayMovimentations(robots.movimentations), "MOVIEMNTOO");
+
+  return (
+    <S.Container>
+      {robots.map(
+        (
+          {
+            title,
+            id,
+            running,
+            stock_codes,
+            strategy,
+            daily_balance,
+            type,
+            movimentations,
+            last_paper,
+          },
+          key
+        ) => (
+          <CardBot
+            number={key + 1 - 35}
+            title={title}
+            id={id}
+            running={running}
+            stock_codes={stock_codes}
+            strategy={strategy}
+            daily_balance={daily_balance}
+            type={type}
+            movimentations={movimentations}
+            last_paper={last_paper}
+            key={key}
+          />
+        )
+      )}
+    </S.Container>
+  );
+};
 
 export default CardContainer;

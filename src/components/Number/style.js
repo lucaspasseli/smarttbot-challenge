@@ -24,6 +24,6 @@ export const NumberText = styled.p`
   margin-top: 0.3rem;
 
   &::before {
-    content: "${({ isMoney }) => isMoney && "R$"}";
+    content: "${({ isMoney }) => isMoney && "R$ "}";
   }
 `;

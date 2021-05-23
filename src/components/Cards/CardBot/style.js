@@ -5,6 +5,7 @@ export const Container = styled.div`
   gap: 1rem;
   display: flex;
   justify-content: space-between;
+  max-height: 11vw;
 `;
 
 export const Collumn = styled.div`

@@ -5,40 +5,74 @@ import Badge from "../../Badges";
 import Number from "../../Number";
 import PaperInfo from "../../PaperInfo";
 import Graphic from "../../Graphic";
+import { getTodayMovimentations } from "../../../utils/getTodayMovimentations";
 
-const CardBot = ({ number }) => (
-  <Paper gridArea={`Card${number}`}>
-    <S.Container>
-      <S.Collumn width="40%">
-        <S.Row>
-          <div>
-            <S.Title>Título do Robô</S.Title>
-            <S.Text>#179301</S.Text>
-          </div>
-          <Status isRunning />
-        </S.Row>
-        <S.BadgeWrap>
-          <Badge name="Pessimista" />
-          <Badge name="WIN%" />
-          <Badge name="Price Action" />
-        </S.BadgeWrap>
-        <PaperInfo />
-        <S.Row>
-          <Number description="Saldo diário" isMoney numberValue={-220.0} />
-          <Number description="Trades no dia" alignX="right" numberValue={7} />
-        </S.Row>
-      </S.Collumn>
-      <S.Collumn width="60%">
-        <S.Row>
-          <div>
-            <S.Title>Histórico do dia</S.Title>
-            <S.Text>Última atualização • 16:00</S.Text>
-            <Graphic />
-          </div>
-        </S.Row>
-      </S.Collumn>
-    </S.Container>
-  </Paper>
-);
+const CardBot = ({
+  number,
+  title,
+  id,
+  running,
+  stock_codes,
+  strategy,
+  daily_balance,
+  type,
+  movimentations,
+  last_paper,
+}) => {
+  const todayMovimentations = getTodayMovimentations(movimentations) || [];
+  const lastUpdate = todayMovimentations[
+    todayMovimentations.length - 1
+  ]?.date.substring(10, 16);
+
+  console.log(todayMovimentations, "aaaaaaaaaaa");
+  return (
+    <Paper width="calc(50% - 0.5rem)">
+      <S.Container>
+        <S.Collumn width="40%">
+          <S.Row>
+            <div>
+              <S.Title>{title}</S.Title>
+              <S.Text>#{id}</S.Text>
+            </div>
+            <Status isRunning={running} />
+          </S.Row>
+          <S.BadgeWrap>
+            <Badge name={strategy} />
+            <Badge name={stock_codes} />
+            <Badge name={type} />
+          </S.BadgeWrap>
+          <PaperInfo
+            paper={last_paper?.paper}
+            paperValue={last_paper?.paper_value}
+            position={last_paper?.position}
+            profit={last_paper?.profit}
+            type={last_paper?.type}
+          />
+          <S.Row>
+            <Number
+              description="Saldo diário"
+              isMoney
+              numberValue={daily_balance}
+            />
+            <Number
+              description="Trades no dia"
+              alignX="right"
+              numberValue={todayMovimentations.length}
+            />
+          </S.Row>
+        </S.Collumn>
+        <S.Collumn width="60%">
+          <S.Row>
+            <div>
+              <S.Title>Histórico do dia</S.Title>
+              <S.Text>Última atualização • {lastUpdate}</S.Text>
+              <Graphic movimentations={todayMovimentations} />
+            </div>
+          </S.Row>
+        </S.Collumn>
+      </S.Container>
+    </Paper>
+  );
+};
 
 export default CardBot;

@@ -7,7 +7,7 @@ export const getRobotsThunk = () => async (dispatch) => {
       data: { data },
     } = await api.get("/robot/");
     dispatch(
-      getRobots(data.filter(({ running, mode }) => running === 1 && mode === 1))
+      getRobots(data.filter(({ mode, running }) => mode === 1 && running === 1))
     );
   } catch (error) {
     console.log(error);

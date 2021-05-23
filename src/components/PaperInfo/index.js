@@ -1,22 +1,22 @@
 import * as S from "./style";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 
-const PaperInfo = ({ paper }) => (
+const PaperInfo = ({ paper, paperValue, position, profit, type }) => (
   <S.Container>
-    <S.Position>30</S.Position>
+    <S.Position>{position}</S.Position>
     <S.Wrap>
       <S.Text weight="500" color="gray">
-        WINGB20
+        {paper}
       </S.Text>
-      <S.Text>Compra</S.Text>
+      <S.Text>{type ? "Compra" : "Venda"}</S.Text>
     </S.Wrap>
     <div>
       <S.Text weight="300" color="gray">
-        114.093.33
+        {paperValue}
       </S.Text>
       <S.Text color="green" isMoney>
         <IoMdArrowDropdown />
-        R$92,33
+        R${profit}
       </S.Text>
     </div>
   </S.Container>
