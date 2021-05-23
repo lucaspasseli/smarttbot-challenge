@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  grid-template-areas:
-    "Card1 Card2"
-    "Card3 Card4";
   grid-area: CardContainer;
+  padding-bottom: 0.5rem;
 `;
