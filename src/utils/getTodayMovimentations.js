@@ -9,6 +9,6 @@ export const getTodayMovimentations = (movimentations = []) => {
       dateDay[2]
     );
     console.log(dateToCheck);
-    return isToday(dateToCheck).length;
+    return isToday(dateToCheck);
   });
 };
