@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 1.5rem;
-  gap: 1rem;
   display: flex;
   justify-content: space-between;
   max-height: 11vw;
@@ -10,7 +9,6 @@ export const Container = styled.div`
 
 export const Collumn = styled.div`
   width: ${({ width }) => width || "50%"};
-  height: 80%;
   gap: 1rem;
   display: flex;
   flex-direction: column;

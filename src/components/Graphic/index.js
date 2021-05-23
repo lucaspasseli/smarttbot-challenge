@@ -1,4 +1,5 @@
 import { Line } from "react-chartjs-2";
+import * as S from "./style";
 
 const Graphic = ({ movimentations }) => {
   const movimentationsData = movimentations.map(({ date, value }, ind) => ({
@@ -9,7 +10,7 @@ const Graphic = ({ movimentations }) => {
   console.log(movimentationsData);
 
   return (
-    <div>
+    <S.Container>
       <Line
         data={{
           datasets: [
@@ -68,10 +69,8 @@ const Graphic = ({ movimentations }) => {
             },
           },
         }}
-        height={180}
-        width={400}
       />
-    </div>
+    </S.Container>
   );
 };
 

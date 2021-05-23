@@ -61,14 +61,12 @@ const CardBot = ({
             />
           </S.Row>
         </S.Collumn>
-        <S.Collumn width="60%">
-          <S.Row>
-            <div>
-              <S.Title>Histórico do dia</S.Title>
-              <S.Text>Última atualização • {lastUpdate}</S.Text>
-              <Graphic movimentations={todayMovimentations} />
-            </div>
-          </S.Row>
+        <S.Collumn>
+          <div>
+            <S.Title>Histórico do dia</S.Title>
+            <S.Text>Última atualização • {lastUpdate}</S.Text>
+          </div>
+          <Graphic movimentations={todayMovimentations} />
         </S.Collumn>
       </S.Container>
     </Paper>
