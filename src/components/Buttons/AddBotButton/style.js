@@ -5,4 +5,5 @@ export const Container = styled.div`
   height: 4rem;
   border: 1px solid var(--gray);
   border-radius: 0.3rem;
+  cursor: pointer;
 `;
