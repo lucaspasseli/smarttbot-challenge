@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  width: 46%;
+  width: 100%;
   align-items: center;
+
+  @media screen and (min-width: 767px) {
+    width: 45%;
+  }
 `;
 
 export const Line = styled.div`
