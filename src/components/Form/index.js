@@ -36,8 +36,6 @@ const Form = () => {
   }, []);
 
   const handleForm = (data) => {
-    console.log(data);
-
     api.post("/robot", data).then((response) => console.log(response));
     reset();
     history.push("/");
