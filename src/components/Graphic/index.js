@@ -2,12 +2,10 @@ import { Line } from "react-chartjs-2";
 import * as S from "./style";
 
 const Graphic = ({ movimentations }) => {
-  const movimentationsData = movimentations.map(({ date, value }, ind) => ({
+  const movimentationsData = movimentations.map(({ date, value }) => ({
     x: date.substring(10, 16).replace(":", "."),
     y: value,
   }));
-
-  console.log(movimentationsData);
 
   return (
     <S.Container>

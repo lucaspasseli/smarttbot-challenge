@@ -26,7 +26,6 @@ const CardBot = ({
     todayMovimentations.length - 1
   ]?.date.substring(10, 16);
 
-  console.log(todayMovimentations, "aaaaaaaaaaa");
   return (
     <S.Card>
       <Paper>

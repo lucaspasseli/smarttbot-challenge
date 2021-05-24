@@ -16,8 +16,7 @@ const SideBar = () => (
             width="2rem"
             separator="Bottom"
             isClickable
-            classname={"onDesktop"}
-            onDesktop
+            isDesktop
           />
           <div className="isToggle">
             <Icon
@@ -26,8 +25,7 @@ const SideBar = () => (
               width="6.5rem"
               separator="Bottom"
               isClickable
-              classname={"onDesktop"}
-              onDesktop
+              isDesktop
             />
           </div>
         </S.ToggleItem>

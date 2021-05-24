@@ -46,7 +46,7 @@ export const Row = styled.div`
   justify-content: space-between;
   flex-direction: column;
   margin: 1rem 0;
-
+  gap: 1rem 0;
   text-align: center;
   @media screen and (min-width: 340px) {
     text-align: left;
@@ -67,9 +67,17 @@ export const Text = styled.p`
 `;
 
 export const WrapIcons = styled.div`
-  opacity: 0.4;
-  font-size: 1.2rem;
   display: flex;
-  gap: 1rem;
+  opacity: 0.4;
+
   cursor: pointer;
+  gap: 1rem;
+  justify-content: center;
+
+  font-size: 2rem;
+
+  @media screen and (min-width: 340px) {
+    font-size: 1.2rem;
+    justify-content: flex-start;
+  }
 `;

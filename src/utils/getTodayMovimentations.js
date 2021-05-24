@@ -1,4 +1,4 @@
-import { isToday, format } from "date-fns";
+import { isToday } from "date-fns";
 
 export const getTodayMovimentations = (movimentations = []) => {
   return movimentations.filter(({ date }) => {
@@ -8,7 +8,6 @@ export const getTodayMovimentations = (movimentations = []) => {
       Number(dateDay[1] - 1),
       dateDay[2]
     );
-    console.log(dateToCheck);
     return isToday(dateToCheck);
   });
 };

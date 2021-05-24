@@ -4,7 +4,6 @@ import Papers from "../Papers";
 import * as S from "./style";
 
 const Operations = ({ overview }) => {
-  console.log(overview);
   const { moviment_summary, transactions, papers = [] } = overview;
 
   return (
@@ -26,7 +25,7 @@ const Operations = ({ overview }) => {
         <S.Text>Papéis negociados</S.Text>
         <S.PapersWrap>
           {papers.map(({ name, trasactions }, key) => (
-            <Papers name={name} trasactions={trasactions} />
+            <Papers name={name} trasactions={trasactions} key={key} />
           ))}
         </S.PapersWrap>
       </S.Container>

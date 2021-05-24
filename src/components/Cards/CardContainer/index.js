@@ -1,12 +1,7 @@
-import { getTodayMovimentations } from "../../../utils/getTodayMovimentations";
 import CardBot from "../CardBot";
 import * as S from "./style";
 
 const CardContainer = ({ robots = [] }) => {
-  console.log(robots, "aaaaaaaaa");
-
-  console.log(getTodayMovimentations(robots.movimentations), "MOVIEMNTOO");
-
   return (
     <S.Container>
       {robots.map(

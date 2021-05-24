@@ -37,7 +37,7 @@ export const Title = styled.h1`
   margin-bottom: 0.3rem;
 `;
 
-export const Text = styled.p`
+export const Text = styled.span`
   color: var(--gray);
   font-size: 0.9rem;
   font-weight: ${({ isBold }) => (isBold ? "500" : "400")};
