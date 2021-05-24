@@ -97,3 +97,15 @@ export const Back = styled.div`
     color: var(--green);
   }
 `;
+
+export const Message = styled.p`
+  width: 180px;
+  background-color: var(--green);
+  margin: 0rem auto;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  color: var(--white);
+  text-align: center;
+  font-weight: 500;
+`;

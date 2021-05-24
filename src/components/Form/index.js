@@ -26,8 +26,6 @@ const Form = () => {
     resolver: yupResolver(registerSchema),
   });
 
-  const [error, setError] = useState(null);
-
   useEffect(() => {
     try {
       api.get("/strategy").then(({ data: { data } }) => setStrategies(data));
@@ -45,8 +43,6 @@ const Form = () => {
     history.push("/");
   };
 
-  console.log(errors);
-
   return (
     <div>
       <Icon icon={LogotipoSmarttBot} width="16rem" />
@@ -57,6 +53,11 @@ const Form = () => {
         <S.Form onSubmit={handleSubmit(handleForm)}>
           <S.Fieldset>
             <S.InputsWrap>
+              <S.Message>
+                {errors?.title?.message ||
+                  errors?.initial_capital?.message ||
+                  "Cadastre o seu robô :)"}
+              </S.Message>
               <S.Label>Nome do Robô: </S.Label>
               <S.Input
                 type="text"
