@@ -1,6 +1,9 @@
 <p align="center">In this challenge, 
 I challenged myself putting in practice very important concepts from React and stylization, like Grid, integration with API, versioning, componentization, organization, 
-form validation, routes navigation, and so much more...
+form validation, routes navigation, documentation and so much more...
+
+I am very proud to had the opportunity, it was a huge learning experience from start to finish :)
+
 </p>
 
 <div align="center">
@@ -29,20 +32,18 @@ form validation, routes navigation, and so much more...
 This project was made using the follow technologies:
 
 - [React](https://reactjs.org/)
-- [React Icons](https://react-icons.github.io/react-icons/)
+- [Redux](https://redux.js.org/)
+- [Redux-Thunk](https://github.com/reduxjs/redux-thunk)
+- [Styled-Components](https://styled-components.com/)
 - [Axios](https://github.com/axios/axios)
-
-- [Redux](https://github.com/axios/axios)
-- [Redux-Thunk](https://github.com/axios/axios)
-
-- [Styled-Components](https://github.com/axios/axios)
-- [React-Router-Doom](https://github.com/axios/axios)
-- [Yup](https://github.com/axios/axios)
-- [React-Hook-Form](https://github.com/axios/axios)
-- [ChartJs](https://github.com/axios/axios)
-- [React-Chartjs-2](https://github.com/axios/axios)
-- [Date-Fns](https://github.com/axios/axios)
-- [@hookForm](https://github.com/axios/axios)
+- [React-Router-Doom](https://www.npmjs.com/package/react-router-dom)
+- [Yup](https://www.npmjs.com/package/yup)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React-Hook-Form](https://react-hook-form.com/)
+- [ChartJs](https://www.chartjs.org/)
+- [React-Chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
+- [Date-Fns](hhttps://date-fns.org/)
+- [@hookForm](https://www.npmjs.com/package/@hookform/resolvers)
 
 # :computer: How to run
 
