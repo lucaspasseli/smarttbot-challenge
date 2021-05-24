@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: 1.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem min(10rem) auto min(13rem) auto;
+  grid-template-rows: 4rem min(11rem) auto min(13rem) auto;
   gap: 1rem 2rem;
   grid-template-areas:
     "SideBar"
