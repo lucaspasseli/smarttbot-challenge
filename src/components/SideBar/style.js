@@ -5,30 +5,51 @@ export const SideBar = styled.div`
   transition: 0.4s;
   z-index: 1;
 
+  .isToggle {
+    opacity: 0;
+    display: inline;
+    width: 12rem;
+  }
+
   @media screen and (min-width: 795px) {
-    position: fixed;
-    width: 4rem;
+    width: 4.5rem;
     height: calc(100vh - 3rem);
+    position: fixed;
 
     &:hover {
-      width: 13rem;
-      transition: 0.4s;
+      width: 12rem;
+
+      .isToggle {
+        opacity: 1;
+        transition: 1s;
+      }
     }
   }
 `;
 
 export const Wrap = styled.div`
   height: 100%;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 2rem;
   gap: 2rem;
 
   @media screen and (min-width: 795px) {
+    margin: 0 2rem;
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+    align-items: flex-start;
     margin: 0;
+  }
+`;
+
+export const ToggleItem = styled.div`
+  @media screen and (min-width: 795px) {
+    min-width: 550px;
+    padding-left: ${({ menuItem }) => menuItem && "0.5rem"};
+    display: flex;
+    gap: ${({ menuItem }) => menuItem && "1rem"};
+    align-items: center;
   }
 `;
