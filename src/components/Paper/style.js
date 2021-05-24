@@ -1,4 +1,3 @@
-import isToday from "date-fns/isToday";
 import styled from "styled-components";
 
 export const Paper = styled.div`

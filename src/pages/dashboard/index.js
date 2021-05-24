@@ -15,7 +15,7 @@ const Dashboard = () => {
   useEffect(() => {
     dispatch(getOverviewThunk());
     dispatch(getRobotsThunk());
-  }, []);
+  }, [dispatch]);
 
   return (
     <S.Container>
