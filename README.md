@@ -1,4 +1,4 @@
-<p align="center">In this challenge, 
+<p align="center">In this project, 
 I challenged myself putting in practice very important concepts from React and stylization, like Grid, integration with API, versioning, componentization, organization, 
 form validation, routes navigation, documentation and so much more...
 
@@ -23,8 +23,8 @@ I am very proud to had the opportunity, it was a huge learning experience from s
 
 <div align="center">
    <img src="./screenshots/smarttbot-challenge1.png" width="900px">
-   <img src="./screenshots/smarttbot-challenge2.png" width="400px">
-   <img src="./screenshots/smarttbot-challenge3.png" width="400px">
+   <img src="./screenshots/smarttbot-challenge2.png" width="400px" height="600px">
+   <img src="./screenshots/smarttbot-challenge3.png" width="400px" height="600px">
 </div>
 
 # :rocket: Technologies
