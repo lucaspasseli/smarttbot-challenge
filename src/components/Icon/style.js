@@ -12,4 +12,9 @@ export const Icon = styled.img`
     separator === "Bottom" && "1px solid var(--gray)"};
 
   cursor: ${({ isClickable }) => isClickable && "pointer"};
+  display: ${({ onDesktop }) => onDesktop && "none"};
+
+  @media screen and (min-width: 795px) {
+    display: ${({ onDesktop }) => onDesktop && "block"};
+  }
 `;
