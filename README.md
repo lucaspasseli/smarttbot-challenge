@@ -27,7 +27,7 @@ I am very proud to had the opportunity, it was a huge learning experience from s
    <img src="./screenshots/smarttbot-challenge3.png" width="400px" height="600px">
 </div>
 
-<p align="center">You can also see the application over here in <a href="https://smarttbot-challenge.vercel.app/">Vercel</a>
+<p align="center">You can also see the application over here in <a href="https://smarttbot-challenge.vercel.app/" target="_blank">Vercel</a>
 
 </p>
 
