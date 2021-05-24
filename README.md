@@ -27,6 +27,10 @@ I am very proud to had the opportunity, it was a huge learning experience from s
    <img src="./screenshots/smarttbot-challenge3.png" width="400px" height="600px">
 </div>
 
+<p align="center">You can also see the application over here in <a href="https://smarttbot-challenge.vercel.app/">Vercel</a>
+
+</p>
+
 # :rocket: Technologies
 
 This project was made using the follow technologies:
@@ -42,7 +46,7 @@ This project was made using the follow technologies:
 - [React-Hook-Form](https://react-hook-form.com/)
 - [ChartJs](https://www.chartjs.org/)
 - [React-Chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
-- [Date-Fns](hhttps://date-fns.org/)
+- [Date-Fns](https://date-fns.org/)
 - [@hookForm](https://www.npmjs.com/package/@hookform/resolvers)
 
 # :computer: How to run
