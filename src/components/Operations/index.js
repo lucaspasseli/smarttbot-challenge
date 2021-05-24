@@ -23,7 +23,7 @@ const Operations = ({ overview }) => {
             numberValue={transactions}
           />
         </S.Wrap>
-        <S.Text>Papés negociados</S.Text>
+        <S.Text>Papéis negociados</S.Text>
         <S.PapersWrap>
           {papers.map(({ name, trasactions }, key) => (
             <Papers name={name} trasactions={trasactions} />

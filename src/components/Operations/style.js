@@ -8,13 +8,24 @@ export const Wrap = styled.div`
   display: flex;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--gray);
+  flex-direction: column;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+  }
 `;
 
 export const PapersWrap = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.5rem;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Title = styled.h1`
