@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: inline-block;
 
   @media screen and (min-width: 767px) {
+    text-align: left;
     text-align: ${({ alignX }) => alignX};
     margin-left: ${({ alignX }) => alignX === "right" && "auto"};
   }
