@@ -65,3 +65,11 @@ export const Text = styled.p`
   opacity: 0.7;
   font-size: 0.9rem;
 `;
+
+export const WrapIcons = styled.div`
+  opacity: 0.4;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+`;

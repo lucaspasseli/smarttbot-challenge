@@ -6,6 +6,8 @@ import Number from "../../Number";
 import PaperInfo from "../../PaperInfo";
 import Graphic from "../../Graphic";
 import { getTodayMovimentations } from "../../../utils/getTodayMovimentations";
+import { GiPauseButton } from "react-icons/gi";
+import { HiDotsVertical } from "react-icons/hi";
 
 const CardBot = ({
   number,
@@ -63,10 +65,16 @@ const CardBot = ({
             </S.Row>
           </S.Collumn>
           <S.Collumn>
-            <div>
-              <S.Title>Histórico do dia</S.Title>
-              <S.Text>Última atualização • {lastUpdate}</S.Text>
-            </div>
+            <S.Row>
+              <div>
+                <S.Title>Histórico do dia</S.Title>
+                <S.Text>Última atualização • {lastUpdate}</S.Text>
+              </div>
+              <S.WrapIcons>
+                <GiPauseButton />
+                <HiDotsVertical />
+              </S.WrapIcons>
+            </S.Row>
             <Graphic movimentations={todayMovimentations} />
           </S.Collumn>
         </S.Container>
