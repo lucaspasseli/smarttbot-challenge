@@ -6,6 +6,10 @@ export const Card = styled.div`
   @media screen and (min-width: 795px) {
     width: calc(50% - 0.5rem);
   }
+
+  @media screen and (min-width: 1500px) {
+    max-height: 16rem;
+  }
 `;
 
 export const Container = styled.div`
