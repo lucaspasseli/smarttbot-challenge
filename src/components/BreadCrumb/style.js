@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const BreadCrumb = styled.div`
-  flex-grow: 1;
+  font-size: 0.8rem;
+  @media screen and (min-width: 767px) {
+    flex-grow: 1;
+    margin: 0 0.3em;
+  }
 `;
 
 export const Text = styled.span`
@@ -9,9 +13,13 @@ export const Text = styled.span`
 
   &::after {
     content: "/";
-    margin: 0 0.3em;
+    margin: 0;
     color: var(--gray);
     font-weight: 200;
+
+    @media screen and (min-width: 340px) {
+      margin: 0 0.3em;
+    }
   }
 
   &:nth-last-of-type(1) {
