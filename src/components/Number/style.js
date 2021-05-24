@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   text-align: center;
-  margin: 1rem;
   display: inline-block;
+  margin: 0.5rem 0;
 
   @media screen and (min-width: 767px) {
     text-align: left;
-    margin: 0;
     text-align: ${({ alignX }) => alignX};
     margin-left: ${({ alignX }) => alignX === "right" && "auto"};
   }

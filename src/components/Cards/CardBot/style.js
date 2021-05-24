@@ -8,7 +8,7 @@ export const Card = styled.div`
   }
 
   @media screen and (min-width: 1500px) {
-    max-height: 16rem;
+    max-height: 18rem;
   }
 `;
 
@@ -26,11 +26,9 @@ export const Container = styled.div`
 
 export const Collumn = styled.div`
   width: 100%;
-  gap: 0 1rem;
+  gap: 0.1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 0.5rem 0;
 
   @media screen and (min-width: 1500px) {
     width: ${({ width }) => width || "50%"};
@@ -47,10 +45,13 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin: 1rem 0;
 
   text-align: center;
   @media screen and (min-width: 340px) {
+    text-align: left;
     flex-direction: row;
+    margin: 0;
   }
 `;
 

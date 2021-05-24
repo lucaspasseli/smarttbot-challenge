@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 13rem;
+  width: 11rem;
   height: 3rem;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -10,9 +10,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem 10%;
 
   @media screen and (min-width: 340px) {
+    text-align: left;
     width: auto;
   }
 `;
