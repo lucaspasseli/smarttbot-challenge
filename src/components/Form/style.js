@@ -84,3 +84,16 @@ export const Select = styled.select`
   outline: none;
   cursor: pointer;
 `;
+
+export const Back = styled.div`
+  position: relative;
+  top: 2rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  &:hover {
+    color: var(--green);
+  }
+`;

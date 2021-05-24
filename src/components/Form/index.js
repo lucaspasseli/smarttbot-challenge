@@ -7,11 +7,15 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import Paper from "../Paper";
 import Icon from "../Icon";
 import LogotipoSmarttBot from "../../assets/logotipoSmarttBot.png";
+import { IoMdArrowDropleft } from "react-icons/io";
+import { useHistory } from "react-router-dom";
 
 const Form = () => {
   const [strategies, setStrategies] = useState([]);
   const [brokers, setBrokers] = useState([]);
   const [isReal, setIsReal] = useState(true);
+
+  const history = useHistory();
 
   const {
     register,
@@ -38,6 +42,7 @@ const Form = () => {
 
     api.post("/robot", data).then((response) => console.log(response));
     reset();
+    history.push("/");
   };
 
   console.log(errors);
@@ -46,6 +51,9 @@ const Form = () => {
     <div>
       <Icon icon={LogotipoSmarttBot} width="16rem" />
       <Paper>
+        <S.Back onClick={() => history.goBack()}>
+          <IoMdArrowDropleft /> Voltar
+        </S.Back>
         <S.Form onSubmit={handleSubmit(handleForm)}>
           <S.Fieldset>
             <S.InputsWrap>
