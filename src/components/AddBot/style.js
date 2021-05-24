@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100%;
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+  }
+
+  text-align: center;
 `;
 
 export const Wrap = styled.div`
@@ -9,11 +14,22 @@ export const Wrap = styled.div`
   align-items: center;
   height: 100%;
   margin: 0 1.5rem;
+  flex-direction: column;
+  padding: 1rem;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    padding: 0;
+  }
 `;
 
 export const TextWrap = styled.div`
-  margin-left: 2rem;
-  flex-grow: 1;
+  margin: 1rem 0 1rem 0;
+  @media screen and (min-width: 767px) {
+    margin: 0 0 0 1rem;
+    flex-grow: 1;
+    text-align: left;
+  }
 `;
 
 export const Title = styled.h1`
