@@ -11,10 +11,7 @@ export const Text = styled.span`
   color: ${({ isBold }) => (isBold ? "var(--black)" : "var(--gray)")};
   font-weight: ${({ isBold }) => (isBold ? "500" : "400")};
   text-align: center;
-  font-size: 0.6rem;
-  @media screen and (min-width: 795px) {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 `;
 
 export const Toggle = styled.div`
