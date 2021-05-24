@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   border: ${({ isHighlight }) => !isHighlight && "1px solid rgb(0, 0, 0, 0.1)"};
   padding: 0.2rem;
+  margin: 0.5rem 0;
   border-radius: 0.2rem;
   display: inline;
   width: fit-content;
