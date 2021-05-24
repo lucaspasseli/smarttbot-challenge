@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  text-align: ${({ alignX }) => alignX};
-  margin-left: ${({ alignX }) => alignX === "right" && "auto"};
+  text-align: center;
+  margin: 1rem;
   display: inline-block;
+
+  @media screen and (min-width: 767px) {
+    text-align: ${({ alignX }) => alignX};
+    margin-left: ${({ alignX }) => alignX === "right" && "auto"};
+  }
 `;
 
 export const Text = styled.p`

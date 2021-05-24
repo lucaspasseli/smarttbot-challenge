@@ -5,5 +5,5 @@ export const Container = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   grid-area: CardContainer;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
 `;
