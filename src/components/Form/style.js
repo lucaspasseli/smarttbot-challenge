@@ -1,8 +1,18 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
-  width: 40vw;
-  height: 65vh;
+  width: 85vw;
+  height: auto;
+  text-align: center;
+
+  @media screen and (min-width: 540px) {
+    width: 65vw;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 895px) {
+    width: 40vw;
+  }
 `;
 
 export const Label = styled.label`
@@ -32,10 +42,20 @@ export const Input = styled.input`
   outline: none;
   max-width: ${({ type }) => (type === "text" ? "16rem" : "4rem")};
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--green);
   cursor: ${({ type }) => type === "radio" && "pointer"};
-  margin: ${({ type }) => type === "radio" && "1rem"};
+  margin: 0 auto;
+  margin: ${({ type }) => type === "radio" && "1rem auto"};
+  display: ${({ type }) => type === "radio" && "block"};
+  text-align: center;
+
+  @media screen and (min-width: 540px) {
+    margin: 0;
+    margin: ${({ type }) => type === "radio" && "1rem"};
+    display: inline;
+    text-align: left;
+  }
 
   &:focus {
     border-color: var(--green);
