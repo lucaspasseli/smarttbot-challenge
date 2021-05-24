@@ -19,7 +19,7 @@ form validation, routes navigation, and so much more...
 # :camera: Screenshots
 
 <div align="center">
-   <img src="./screenshots/smarttbot-challenge1.png" width="400px">
+   <img src="./screenshots/smarttbot-challenge1.png" width="900px">
    <img src="./screenshots/smarttbot-challenge2.png" width="400px">
    <img src="./screenshots/smarttbot-challenge3.png" width="400px">
 </div>
