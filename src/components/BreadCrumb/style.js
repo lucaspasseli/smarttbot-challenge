@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BreadCrumb = styled.div`
   font-size: 0.8rem;
   @media screen and (min-width: 767px) {
+    font-size: 1rem;
     flex-grow: 1;
     margin: 0 0.3em;
   }
