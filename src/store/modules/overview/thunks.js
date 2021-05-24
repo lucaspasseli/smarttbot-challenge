@@ -1,7 +1,7 @@
 import { api } from "../../../services/api";
 import { getOverview } from "./actions";
 
-export const getPapersThunk = () => async (dispatch) => {
+export const getOverviewThunk = () => async (dispatch) => {
   try {
     const {
       data: { data },
