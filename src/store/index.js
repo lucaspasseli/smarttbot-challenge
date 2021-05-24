@@ -1,10 +1,10 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import papersReducer from "./modules/overview/reducer";
+import overviewReducer from "./modules/overview/reducer";
 import robotsReducer from "./modules/robots/reducer";
 
 const reducers = combineReducers({
-  overview: papersReducer,
+  overview: overviewReducer,
   robots: robotsReducer,
 });
 

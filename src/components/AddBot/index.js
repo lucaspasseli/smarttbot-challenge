@@ -1,7 +1,5 @@
-import Icon from "../Icon";
 import Paper from "../Paper";
 import * as S from "./style";
-import LogoSmarttBot from "../../assets/logoSmarttBot.png";
 import AddBotButton from "../Buttons/AddBotButton";
 import { useHistory } from "react-router-dom";
 

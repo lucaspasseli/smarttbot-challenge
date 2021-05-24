@@ -57,7 +57,7 @@ const Form = () => {
         <S.Form onSubmit={handleSubmit(handleForm)}>
           <S.Fieldset>
             <S.InputsWrap>
-              <S.Label>Nome do bot: </S.Label>
+              <S.Label>Nome do Robô: </S.Label>
               <S.Input
                 type="text"
                 id="title"
@@ -65,7 +65,7 @@ const Form = () => {
                 {...register("title")}
               />
 
-              <S.Label>Estratégia</S.Label>
+              <S.Label>Selecione sua estratégia:</S.Label>
               <S.Select
                 name="Selecione estratégia"
                 id="strategy_id"
@@ -78,7 +78,7 @@ const Form = () => {
                 ))}
               </S.Select>
 
-              <S.Label>Capital inicial</S.Label>
+              <S.Label>Capital inicial:</S.Label>
               <div>
                 <span>R$ </span>
                 <S.Input
@@ -90,7 +90,7 @@ const Form = () => {
               </div>
 
               <S.Wrap>
-                <S.Label>Selecionar Modo</S.Label>
+                <S.Label>Selecionar Modo:</S.Label>
                 <div>
                   {" "}
                   <S.Input
@@ -141,7 +141,7 @@ const Form = () => {
               )}
               {isReal && (
                 <>
-                  <S.Label>Corretoras</S.Label>
+                  <S.Label>Seleciona sua corretora:</S.Label>
                   <S.Select
                     name="Selecione uma corretora"
                     id="broker_id"
